@@ -1,22 +1,27 @@
 package curso
 
-class Persona (private var nombre: String, private var edad: Int, protected var email: String) {
-  def imprimirDatos(): Unit = {
-    println(s"Nombre: $nombre, Edad: $edad, Email: $email ")
-  }
-
-  def cumplirAnios(): Unit = {
-    edad += 1
-    println(s"Feliz cumpleaños! Ahora tienes $edad años.")
-  }
+// Paso 1: Definir la clase (Plano arquitectónico)
+class Casa(var numeroHabitaciones: Int, var tieneJardin: Boolean) {
+  // Aquí podemos definir métodos y comportamientos adicionales de la casa
+  // ...
 }
 
 object Main {
   def main(args: Array[String]): Unit = {
-    val persona = new Persona("Juan", 30, "juan@example.com")
-    persona.imprimirDatos()
+    // Paso 2: Crear un objeto (Instanciar la casa)
+    val miCasa = new Casa(4, true)
+    // Ahora, miCasa es una instancia de la clase Casa, es decir, una casa con 4 habitaciones y un jardín.
 
-    persona.cumplirAnios()
-
+    // Podemos acceder a los atributos de la casa:
+    println(miCasa.numeroHabitaciones) // Imprimirá 4
+    println(miCasa.tieneJardin) // Imprimirá true
   }
 }
+
+
+
+
+
+
+
+
