@@ -41,6 +41,6 @@ object CalculadoraFunciona {
   def main(args: Array[String]): Unit = {
     // Crear instancias de la clase Calculadora usando diferentes constructores
     val calculadoraSuma = new Calculadora(2, 5.25, 3.8)
-    val calculadoraResta = new Calculadora(3, 10.5, 7.2, mostrarResultado = true)
+    val calculadoraResta = new Calculadora(3, 10.5, 7.2235, mostrarResultado = true)
   }
 }
